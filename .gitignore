@@ -8,11 +8,6 @@
 # Never ignore Asset meta data
 ![Aa]ssets/**/*.meta
 
-# JetBrains Rider plugin dll
-**/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll*
-Assets/Plugins.meta
-Assets/Plugins/Editor*
-
 # Uncomment this line if you wish to ignore the asset store tools plugin
 # [Aa]ssets/AssetStoreTools*
 
@@ -57,10 +52,6 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-
-# External assets
-Assets/External
-Assets/External.meta
 
 # Temporary folder
 Assets/Temp
