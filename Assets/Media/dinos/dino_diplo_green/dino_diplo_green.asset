@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f967f3a3851db4917a85e98f88359836, type: 3}
+  m_Name: dino_diplo_green
+  m_EditorClassIdentifier: 
+  _headPart: {fileID: 11400000, guid: 0f220419d7bd745e18b7f36b563bd13e, type: 2}
+  _bodyPart: {fileID: 11400000, guid: ca95bd10a6f004ece8d492e141a3001d, type: 2}
+  _tailPart: {fileID: 11400000, guid: fa2dd18d8956749e789f1f5ad06e40e8, type: 2}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a811100fd3c4b4d947ae21a5cbda90c, type: 3}
+  m_Name: dino_diplo_green_part_2
+  m_EditorClassIdentifier: Assembly-CSharp:Params:PartParams
+  _partType: 2
+  _name: Krypto
+  _boneImage: {fileID: 2961369170257383760, guid: aea0da1c3deb54b0abada63df52734f5,
+    type: 3}
+  _fleshImage: {fileID: 2961369170257383760, guid: aea0da1c3deb54b0abada63df52734f5,
+    type: 3}
