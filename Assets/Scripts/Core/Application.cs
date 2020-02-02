@@ -18,7 +18,7 @@ namespace Core
             _gameModel = new GameModel(_gameParams);
             _gameController = new GameController(_gameModel, _canvas, _moduleContainer);
 
-            _gameController.OpenMenuModule();
+            _gameController.OpenTitleModule();
         }
 
         private void Update()

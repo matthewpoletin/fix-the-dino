@@ -4,6 +4,7 @@ using Modules.Combine;
 using Modules.Map;
 using Modules.Menu;
 using Modules.Site;
+using Modules.TitleModule;
 using UnityEngine;
 
 namespace Core
@@ -18,6 +19,11 @@ namespace Core
         {
             GameModel = gameModel;
             _moduleManager = new ModuleManager(this, canvas, moduleContainer);
+        }
+
+        public void OpenTitleModule()
+        {
+            _moduleManager.OpenModule<TitleModule>();
         }
 
         public void OpenMenuModule()
