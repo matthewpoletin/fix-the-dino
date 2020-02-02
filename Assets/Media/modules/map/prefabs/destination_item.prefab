@@ -133,12 +133,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fb9c1e595334a4681088dcad1c9e5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _image: {fileID: 0}
-  _button: {fileID: 0}
   _nameText: {fileID: 4235209186890157016}
-  _siteParams: {fileID: 0}
   _unvisitedState: {fileID: 1831172087319707045}
   _visitedState: {fileID: 5282905872280984188}
+  _siteParams: {fileID: 0}
 --- !u!1 &4787166587332916017
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,8 +209,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4292098370
-  m_fontColor: {r: 0.25796, g: 0.2232111, b: 0.8301887, a: 1}
+    rgba: 4282792506
+  m_fontColor: {r: 0.22860907, g: 0.22583659, b: 0.2735849, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -236,7 +234,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
