@@ -1,13 +1,11 @@
 using System;
 using Lifecycle;
-using UnityEngine;
 
 namespace Modules.Common
 {
     public class Timer : ITick
     {
-        private readonly float _startTime;
-        private readonly float _endTime;
+        private float _timeLeft;
 
         public event Action<float> OnTimerTick;
         public event Action OnTimerElapsed;
@@ -16,7 +14,7 @@ namespace Modules.Common
 
         public Timer(float duration)
         {
-            _endTime = Time.time + duration;
+            _timeLeft = duration;
         }
 
         public void Tick(float deltaTime)
@@ -26,10 +24,10 @@ namespace Modules.Common
                 return;
             }
 
-            var timeLeft = _endTime - Time.time;
-            OnTimerTick?.Invoke(timeLeft);
+            _timeLeft -= deltaTime;
+            OnTimerTick?.Invoke(_timeLeft);
 
-            if (!_elapsed && timeLeft < 0)
+            if (!_elapsed && _timeLeft < 0)
             {
                 _elapsed = true;
                 OnTimerElapsed?.Invoke();

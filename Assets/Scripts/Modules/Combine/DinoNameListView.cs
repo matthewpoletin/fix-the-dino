@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Lifecycle;
+using Params;
 using UnityEngine;
 
 namespace Modules.Combine
@@ -7,15 +8,33 @@ namespace Modules.Combine
     public class DinoNameListView : BaseView
     {
         [SerializeField] private GameObject _dinoNameViewPrefab = null;
+        [SerializeField] private DinoCardView _dinoCardView = null;
 
-        private readonly List<DinoNameItemView> _allListNameViews = new List<DinoNameItemView>();
+        private readonly List<DinoNameListItemView> _allListNameViews = new List<DinoNameListItemView>();
 
-        public void AddName(string dinoName)
+        private void Awake()
+        {
+            _dinoCardView.gameObject.SetActive(false);
+        }
+
+        public void Connect(PartParams tailParams, PartParams bodyParams, PartParams headParams)
         {
             var dinoNameGameObject = Instantiate(_dinoNameViewPrefab, transform);
-            var dinoNameView = dinoNameGameObject.GetComponent<DinoNameItemView>();
-            dinoNameView.SetData(dinoName);
+            var dinoNameView = dinoNameGameObject.GetComponent<DinoNameListItemView>();
+            dinoNameView.Connect(tailParams, bodyParams, headParams, OnPointerEnter, OnPointerExit);
             _allListNameViews.Add(dinoNameView);
+        }
+
+        private void OnPointerEnter(PartParams tailParams, PartParams bodyParams, PartParams headParams)
+        {
+            _dinoCardView.gameObject.SetActive(true);
+            _dinoCardView.SetData(tailParams, bodyParams, headParams);
+        }
+
+        private void OnPointerExit()
+        {
+            _dinoCardView.CleanUp();
+            _dinoCardView.gameObject.SetActive(false);
         }
 
         public override void Dispose()

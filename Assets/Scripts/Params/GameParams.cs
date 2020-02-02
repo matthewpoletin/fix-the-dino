@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Params
@@ -28,7 +29,7 @@ namespace Params
                 result.Add(dinoParams.TailPart);
             }
 
-            return result;
+            return result.Where(part => part != null).ToList();
         }
     }
 }

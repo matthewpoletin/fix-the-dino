@@ -12,5 +12,9 @@ namespace Lifecycle
         public virtual void Dispose()
         {
         }
+
+        public virtual void CleanUp()
+        {
+        }
     }
 }
