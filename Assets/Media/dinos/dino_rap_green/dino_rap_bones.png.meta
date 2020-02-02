@@ -17,6 +17,21 @@ TextureImporter:
   - first:
       213: 2904974603515310332
     second: dino_rap_bones_4
+  - first:
+      213: 6428359360546312284
+    second: dino_rap_bones_0
+  - first:
+      213: 249091481088516250
+    second: dino_rap_bones_1
+  - first:
+      213: 7463444566893254040
+    second: dino_rap_bones_2
+  - first:
+      213: 133195173433285657
+    second: dino_rap_bones_3
+  - first:
+      213: 8495360970049694216
+    second: dino_rap_bones_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -116,19 +131,19 @@ TextureImporter:
       name: dino_rap_bones_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 0
+        x: 23
+        y: 282
         width: 683
-        height: 1080
+        height: 450
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebb909096244d7c00800000000000000
-      internalID: 899950432968809406
+      spriteID: c509bed87ce163950800000000000000
+      internalID: 6428359360546312284
       vertices: []
       indices: 
       edges: []
@@ -142,14 +157,14 @@ TextureImporter:
         width: 4
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d13bd04827e9ba70800000000000000
-      internalID: 8843353503391494611
+      spriteID: a906bded163f47300800000000000000
+      internalID: 249091481088516250
       vertices: []
       indices: 
       edges: []
@@ -158,19 +173,19 @@ TextureImporter:
       name: dino_rap_bones_2
       rect:
         serializedVersion: 2
-        x: 722
-        y: 0
+        x: 714
+        y: 269
         width: 640
-        height: 1080
+        height: 487
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e41f46f1736ec66e0800000000000000
-      internalID: -1842845023077076658
+      spriteID: 895dd726a4b739760800000000000000
+      internalID: 7463444566893254040
       vertices: []
       indices: 
       edges: []
@@ -179,19 +194,19 @@ TextureImporter:
       name: dino_rap_bones_3
       rect:
         serializedVersion: 2
-        x: 1524
-        y: 0
+        x: 1522
+        y: 500
         width: 219
-        height: 1080
+        height: 186
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d324f4c46c10d830800000000000000
-      internalID: 4093803280406422487
+      spriteID: 91c9946fd4439d100800000000000000
+      internalID: 133195173433285657
       vertices: []
       indices: 
       edges: []
@@ -205,14 +220,14 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf0bf0cb20b805820800000000000000
-      internalID: 2904974603515310332
+      spriteID: 80aa78abac595e570800000000000000
+      internalID: 8495360970049694216
       vertices: []
       indices: 
       edges: []

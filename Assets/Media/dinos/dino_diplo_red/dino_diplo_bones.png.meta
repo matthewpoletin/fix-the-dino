@@ -17,6 +17,21 @@ TextureImporter:
   - first:
       213: 3198116416641566479
     second: dino_diplo_bones_4
+  - first:
+      213: 113121654805858346
+    second: dino_diplo_bones_0
+  - first:
+      213: 8005711957848083314
+    second: dino_diplo_bones_1
+  - first:
+      213: -2508720090333383634
+    second: dino_diplo_bones_2
+  - first:
+      213: -6948878573267953799
+    second: dino_diplo_bones_3
+  - first:
+      213: 8971158364006153490
+    second: dino_diplo_bones_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -117,9 +132,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 35
-        y: 0
+        y: 185
         width: 683
-        height: 1080
+        height: 489
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b2da8de9b53b3fe0800000000000000
-      internalID: -1208313002348326219
+      spriteID: a288b13bb83e19100800000000000000
+      internalID: 113121654805858346
       vertices: []
       indices: 
       edges: []
@@ -148,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2008600b451946790800000000000000
-      internalID: -7537740083394871294
+      spriteID: 27bc1ad0c900a1f60800000000000000
+      internalID: 8005711957848083314
       vertices: []
       indices: 
       edges: []
@@ -158,10 +173,10 @@ TextureImporter:
       name: dino_diplo_bones_2
       rect:
         serializedVersion: 2
-        x: 830
-        y: 0
-        width: 476
-        height: 1080
+        x: 817
+        y: 176
+        width: 489
+        height: 454
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f418e6a3b30ee0ca0800000000000000
-      internalID: -6048650704523984561
+      spriteID: e24face9e5c3f2dd0800000000000000
+      internalID: -2508720090333383634
       vertices: []
       indices: 
       edges: []
@@ -180,9 +195,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1418
-        y: 0
+        y: 351
         width: 425
-        height: 1080
+        height: 314
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8a17e2b269a6daf0800000000000000
-      internalID: -371923677838108018
+      spriteID: 9775a0d11cf909f90800000000000000
+      internalID: -6948878573267953799
       vertices: []
       indices: 
       edges: []
@@ -211,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f070444cfedf16c20800000000000000
-      internalID: 3198116416641566479
+      spriteID: 21d7c563005ff7c70800000000000000
+      internalID: 8971158364006153490
       vertices: []
       indices: 
       edges: []

@@ -17,6 +17,21 @@ TextureImporter:
   - first:
       213: -6868988079881066123
     second: dino_tri_bones_4
+  - first:
+      213: -7602796855121112606
+    second: dino_tri_bones_0
+  - first:
+      213: 9036941293780458913
+    second: dino_tri_bones_1
+  - first:
+      213: 5341095775225097620
+    second: dino_tri_bones_2
+  - first:
+      213: 8353694174794333631
+    second: dino_tri_bones_3
+  - first:
+      213: -8579803576965000722
+    second: dino_tri_bones_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -116,10 +131,10 @@ TextureImporter:
       name: dino_tri_bones_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 0
+        x: 22
+        y: 287
         width: 683
-        height: 1080
+        height: 490
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +142,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 313144ecf2ae46d00800000000000000
-      internalID: 965153711209059091
+      spriteID: 2e19c07aa807d7690800000000000000
+      internalID: -7602796855121112606
       vertices: []
       indices: 
       edges: []
@@ -148,8 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2010a2f85d9376800800000000000000
-      internalID: 605516264297332994
+      spriteID: 1add7d71a3aa96d70800000000000000
+      internalID: 9036941293780458913
       vertices: []
       indices: 
       edges: []
@@ -159,9 +174,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 874
-        y: 0
+        y: 286
         width: 476
-        height: 1080
+        height: 430
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,8 +184,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2021341b15e1111d0800000000000000
-      internalID: -3381888508963384830
+      spriteID: 49da1a92f426f1a40800000000000000
+      internalID: 5341095775225097620
       vertices: []
       indices: 
       edges: []
@@ -179,10 +194,10 @@ TextureImporter:
       name: dino_tri_bones_3
       rect:
         serializedVersion: 2
-        x: 1494
-        y: 0
+        x: 1490
+        y: 353
         width: 327
-        height: 1080
+        height: 401
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,8 +205,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cf5e89a00c1dfa00800000000000000
-      internalID: 791819898657333191
+      spriteID: fbdbdda97984ee370800000000000000
+      internalID: 8353694174794333631
       vertices: []
       indices: 
       edges: []
@@ -211,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 579eb4c1cb37ca0a0800000000000000
-      internalID: -6868988079881066123
+      spriteID: ee11060ca1a6ee880800000000000000
+      internalID: -8579803576965000722
       vertices: []
       indices: 
       edges: []

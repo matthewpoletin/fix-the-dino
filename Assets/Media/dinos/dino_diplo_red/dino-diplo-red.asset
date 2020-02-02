@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f967f3a3851db4917a85e98f88359836, type: 3}
   m_Name: dino-diplo-red
   m_EditorClassIdentifier: 
-  _headPart: {fileID: 0}
-  _bodyPart: {fileID: 0}
-  _tailPart: {fileID: 0}
+  _headPart: {fileID: 11400000, guid: 1d8d48ffc48dc30438ead67e5e12a3c4, type: 2}
+  _bodyPart: {fileID: 11400000, guid: 274c5b78a25254645870c35d40dcb80f, type: 2}
+  _tailPart: {fileID: 11400000, guid: c036f16018aba0e47ad373ce160f976d, type: 2}
