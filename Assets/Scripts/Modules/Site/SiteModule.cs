@@ -7,6 +7,7 @@ namespace Modules.Site
     public class SiteModule : BaseModule
     {
         [SerializeField] private CountdownWidget _countdownWidget = null;
+        [SerializeField] private SandboxView _sandboxView = null;
         [SerializeField] private BasketView _basketView = null;
         [SerializeField] private GameObject _bonePrefab = null;
         [SerializeField] private Transform _sandboxContainer = null;
@@ -21,12 +22,13 @@ namespace Modules.Site
             _gameController = gameController;
             _canvas = canvas;
 
+            _basketView.Connect();
+            _sandboxView.Connect(_canvas);
+
             for (var i = 0; i < 20; i++)
             {
                 CreateRandomPart();
             }
-
-            _basketView.Connect();
         }
 
         public override void OnModuleLoaded()
