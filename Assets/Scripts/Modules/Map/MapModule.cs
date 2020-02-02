@@ -11,7 +11,7 @@ namespace Modules.Map
 
         private GameController _gameController;
 
-        public override void Activate(GameController gameController)
+        public override void Activate(GameController gameController, Canvas canvas)
         {
             _gameController = gameController;
 

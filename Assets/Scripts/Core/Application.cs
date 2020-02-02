@@ -7,6 +7,7 @@ namespace Core
     public class Application : MonoBehaviour
     {
         [SerializeField] private GameParams _gameParams = null;
+        [SerializeField] private Canvas _canvas = null;
         [SerializeField] private Transform _moduleContainer = null;
 
         private GameController _gameController;
@@ -15,7 +16,7 @@ namespace Core
         private void Awake()
         {
             _gameModel = new GameModel(_gameParams);
-            _gameController = new GameController(_gameModel, _moduleContainer);
+            _gameController = new GameController(_gameModel, _canvas, _moduleContainer);
 
             _gameController.OpenMenuModule();
         }

@@ -1,4 +1,5 @@
-﻿using Core;
+﻿using System.Collections.Generic;
+using Core;
 using Modules.Common;
 using UnityEngine;
 
@@ -7,23 +8,29 @@ namespace Modules.Site
     public class SiteModule : BaseModule
     {
         [SerializeField] private CountdownWidget _countdownWidget = null;
+        [SerializeField] private SandboxView _sandboxView = null;
         [SerializeField] private BasketView _basketView = null;
         [SerializeField] private GameObject _bonePrefab = null;
         [SerializeField] private Transform _sandboxContainer = null;
 
         private GameController _gameController;
-        private Timer _timer;
+        private Canvas _canvas;
 
-        public override void Activate(GameController gameController)
+        private Timer _timer;
+        private readonly List<BoneSiteView> _boneSiteViews = new List<BoneSiteView>();
+
+        public override void Activate(GameController gameController, Canvas canvas)
         {
             _gameController = gameController;
+            _canvas = canvas;
+
+            _basketView.Connect();
+            _sandboxView.Connect(_canvas);
 
             for (var i = 0; i < 20; i++)
             {
                 CreateRandomPart();
             }
-
-            _basketView.Connect();
         }
 
         public override void OnModuleLoaded()
@@ -38,10 +45,12 @@ namespace Modules.Site
             var boneGameObject = Instantiate(_bonePrefab, _sandboxContainer);
             var boneSiteView = boneGameObject.GetComponent<BoneSiteView>();
 
-            boneGameObject.transform.position += new Vector3(Random.Range(-500f, 500f), Random.Range(-350f, 350f), 0);
+            boneGameObject.transform.position += new Vector3(Random.Range(-7f, 7f), Random.Range(-3f, 3f), 0);
             var allParts = _gameController.GameModel.Params.GetAllParts();
             var randomPart = allParts[Random.Range(0, allParts.Count)];
-            boneSiteView.Connect(_gameController, randomPart);
+            boneSiteView.Connect(_gameController, _canvas, randomPart, OnPointerEnterBone);
+
+            _boneSiteViews.Add(boneSiteView);
         }
 
         private void OnTimerElapsed()
@@ -54,6 +63,13 @@ namespace Modules.Site
             _gameController.OpenCombineModule();
         }
 
+        private void OnPointerEnterBone(BoneSiteView boneSiteView)
+        {
+            if (_sandboxView.IsClearing)
+            {
+                boneSiteView.IsFound = true;
+            }
+        }
 
         public override void Tick(float deltaTime)
         {
@@ -65,6 +81,12 @@ namespace Modules.Site
         public override void Dispose()
         {
             _countdownWidget.Dispose();
+            foreach (var boneSiteView in _boneSiteViews)
+            {
+                boneSiteView.Dispose();
+                GameObject.Destroy(boneSiteView.gameObject);
+            }
+            _boneSiteViews.Clear();
         }
     }
 }

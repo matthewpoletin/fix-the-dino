@@ -10,13 +10,14 @@ namespace Core
 {
     public class GameController : ITick
     {
-        private readonly ModuleManager _moduleManager;
-        public GameModel GameModel;
+        public readonly GameModel GameModel;
 
-        public GameController(GameModel gameModel, Transform moduleContainer)
+        private readonly ModuleManager _moduleManager;
+
+        public GameController(GameModel gameModel, Canvas canvas, Transform moduleContainer)
         {
             GameModel = gameModel;
-            _moduleManager = new ModuleManager(this, moduleContainer);
+            _moduleManager = new ModuleManager(this, canvas, moduleContainer);
         }
 
         public void OpenMenuModule()

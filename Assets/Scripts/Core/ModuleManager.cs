@@ -9,12 +9,15 @@ namespace Core
     public class ModuleManager : ITick
     {
         private readonly GameController _gameController;
+        private readonly Canvas _canvas;
+
         private readonly List<BaseModule> _allModules;
         private BaseModule _currentModule;
 
-        public ModuleManager(GameController gameController, Transform moduleContainer)
+        public ModuleManager(GameController gameController, Canvas canvas, Transform moduleContainer)
         {
             _gameController = gameController;
+            _canvas = canvas;
 
             _allModules = new List<BaseModule>();
 
@@ -58,7 +61,7 @@ namespace Core
             }
 
             desiredModule.gameObject.SetActive(true);
-            desiredModule.Activate(_gameController);
+            desiredModule.Activate(_gameController, _canvas);
 
             _currentModule = desiredModule;
             desiredModule.OnModuleLoaded();
