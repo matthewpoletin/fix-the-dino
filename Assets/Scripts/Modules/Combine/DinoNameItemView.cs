@@ -6,7 +6,7 @@ namespace Modules.Combine
 {
     public class DinoNameItemView : BaseView
     {
-        [SerializeField] private TextMeshProUGUI _text;
+        [SerializeField] private TextMeshProUGUI _text = null;
 
         public void SetData(string dinoName)
         {
