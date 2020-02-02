@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3695399746813725504}
   - component: {fileID: 8152887247362696223}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: combine_module
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 8370338326672761315}
   - component: {fileID: 5060686746391482576}
   - component: {fileID: 4551243680522881086}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8418387060043592789}
   - component: {fileID: 7736178350348318235}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: bones_container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8954020061474489266}
   - component: {fileID: 4237014677652279683}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: slot_contnet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 103461936192006180}
   - component: {fileID: 6909800845199407966}
   - component: {fileID: 3697235018028844909}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8118952929690528830}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: basket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   - component: {fileID: 7268012913595460751}
   - component: {fileID: 4842125881612780332}
   - component: {fileID: 2549032138524828647}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: dino_name_list
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,6 +456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: slot_item_body
+      objectReference: {fileID: 0}
+    - target: {fileID: 2008252287512312057, guid: bc62fbbbd2f194bf2a7dc8b8f29d33c6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2915201795882643875, guid: bc62fbbbd2f194bf2a7dc8b8f29d33c6,
         type: 3}
@@ -599,6 +604,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: slot_item_head
       objectReference: {fileID: 0}
+    - target: {fileID: 2008252287512312057, guid: bc62fbbbd2f194bf2a7dc8b8f29d33c6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2915201795882643875, guid: bc62fbbbd2f194bf2a7dc8b8f29d33c6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -736,6 +746,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3695399746813725504}
     m_Modifications:
+    - target: {fileID: 210036724857236260, guid: 1c5075e4b76bb4ad78c11b7e6d788644,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6031712347316882408, guid: 1c5075e4b76bb4ad78c11b7e6d788644,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -846,6 +861,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: countdown_widget
       objectReference: {fileID: 0}
+    - target: {fileID: 7349160658229421954, guid: 1c5075e4b76bb4ad78c11b7e6d788644,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c5075e4b76bb4ad78c11b7e6d788644, type: 3}
 --- !u!114 &8397686219885156636 stripped
@@ -877,6 +897,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: slot_item_tail
+      objectReference: {fileID: 0}
+    - target: {fileID: 2008252287512312057, guid: bc62fbbbd2f194bf2a7dc8b8f29d33c6,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2915201795882643875, guid: bc62fbbbd2f194bf2a7dc8b8f29d33c6,
         type: 3}

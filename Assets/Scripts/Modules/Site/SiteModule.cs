@@ -12,11 +12,14 @@ namespace Modules.Site
         [SerializeField] private Transform _sandboxContainer = null;
 
         private GameController _gameController;
+        private Canvas _canvas;
+
         private Timer _timer;
 
-        public override void Activate(GameController gameController)
+        public override void Activate(GameController gameController, Canvas canvas)
         {
             _gameController = gameController;
+            _canvas = canvas;
 
             for (var i = 0; i < 20; i++)
             {
@@ -38,10 +41,10 @@ namespace Modules.Site
             var boneGameObject = Instantiate(_bonePrefab, _sandboxContainer);
             var boneSiteView = boneGameObject.GetComponent<BoneSiteView>();
 
-            boneGameObject.transform.position += new Vector3(Random.Range(-500f, 500f), Random.Range(-350f, 350f), 0);
+            boneGameObject.transform.position += new Vector3(Random.Range(-7f, 7f), Random.Range(-3f, 3f), 0);
             var allParts = _gameController.GameModel.Params.GetAllParts();
             var randomPart = allParts[Random.Range(0, allParts.Count)];
-            boneSiteView.Connect(_gameController, randomPart);
+            boneSiteView.Connect(_gameController, _canvas, randomPart);
         }
 
         private void OnTimerElapsed()

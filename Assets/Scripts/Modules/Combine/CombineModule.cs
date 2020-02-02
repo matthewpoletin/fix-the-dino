@@ -21,7 +21,7 @@ namespace Modules.Combine
 
         private readonly Dictionary<PartType, SlotView> _slotByType = new Dictionary<PartType, SlotView>();
 
-        public override void Activate(GameController gameController)
+        public override void Activate(GameController gameController, Canvas canvas)
         {
             _gameController = gameController;
 

@@ -1,5 +1,6 @@
 using System.Linq;
 using Core;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Modules.Menu
@@ -8,7 +9,7 @@ namespace Modules.Menu
     {
         private GameController _gameController;
 
-        public override void Activate(GameController gameController)
+        public override void Activate(GameController gameController, Canvas canvas)
         {
             _gameController = gameController;
         }

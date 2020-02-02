@@ -12,6 +12,7 @@ namespace Modules.Site
         [SerializeField] private CanvasGroup _canvasGroup = null;
 
         private GameController _gameController;
+        private Canvas _canvas;
         private PartParams _params;
 
         private Vector3 _startPosition;
@@ -32,9 +33,10 @@ namespace Modules.Site
             }
         }
 
-        public void Connect(GameController gameController, PartParams partParams)
+        public void Connect(GameController gameController, Canvas canvas, PartParams partParams)
         {
             _gameController = gameController;
+            _canvas = canvas;
             _params = partParams;
 
             _image.sprite = _params.BoneImage;
@@ -62,7 +64,8 @@ namespace Modules.Site
                 return;
             }
 
-            transform.position = Input.mousePosition;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(_canvas.transform as RectTransform, Input.mousePosition, _canvas.worldCamera, out var pos);
+            transform.position = _canvas.transform.TransformPoint(pos);
         }
 
         public void OnEndDrag(PointerEventData eventData)
