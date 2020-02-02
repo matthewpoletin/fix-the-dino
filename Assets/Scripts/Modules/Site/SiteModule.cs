@@ -1,4 +1,5 @@
-﻿using Core;
+﻿using System.Collections.Generic;
+using Core;
 using Modules.Common;
 using UnityEngine;
 
@@ -16,6 +17,7 @@ namespace Modules.Site
         private Canvas _canvas;
 
         private Timer _timer;
+        private readonly List<BoneSiteView> _createdBones = new List<BoneSiteView>();
 
         public override void Activate(GameController gameController, Canvas canvas)
         {
@@ -46,7 +48,9 @@ namespace Modules.Site
             boneGameObject.transform.position += new Vector3(Random.Range(-7f, 7f), Random.Range(-3f, 3f), 0);
             var allParts = _gameController.GameModel.Params.GetAllParts();
             var randomPart = allParts[Random.Range(0, allParts.Count)];
-            boneSiteView.Connect(_gameController, _canvas, randomPart);
+            boneSiteView.Connect(_gameController, _canvas, randomPart, OnPointerEnterBone);
+
+            _createdBones.Add(boneSiteView);
         }
 
         private void OnTimerElapsed()
@@ -59,6 +63,13 @@ namespace Modules.Site
             _gameController.OpenCombineModule();
         }
 
+        private void OnPointerEnterBone(BoneSiteView boneSiteView)
+        {
+            if (_sandboxView.IsClearing)
+            {
+                boneSiteView.IsFound = true;
+            }
+        }
 
         public override void Tick(float deltaTime)
         {

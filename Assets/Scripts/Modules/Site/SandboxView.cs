@@ -11,6 +11,10 @@ namespace Modules.Site
 
         private Canvas _canvas;
 
+        private float _clearingStartTime;
+        public bool IsClearing { get; private set; }
+        public float ClearingDuration => !IsClearing ? 0f : Mathf.Max(Time.time - _clearingStartTime, 0f);
+
         private void Awake()
         {
             _brush.gameObject.SetActive(false);
@@ -33,12 +37,15 @@ namespace Modules.Site
 
         public void OnPointerDown(PointerEventData eventData)
         {
+            IsClearing = true;
+            _clearingStartTime = Time.time;
             _brush.gameObject.SetActive(true);
             _dustGameObject.gameObject.SetActive(true);
         }
 
         public void OnPointerUp(PointerEventData eventData)
         {
+            IsClearing = false;
             _brush.gameObject.SetActive(false);
             _dustGameObject.gameObject.SetActive(false);
         }
