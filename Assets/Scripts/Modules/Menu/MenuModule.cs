@@ -27,11 +27,6 @@ namespace Modules.Menu
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            // TODO: Если всё пройдено, показать мультик
-            // if (_gameController.GameModel.WalkthroughModel.Sites.Any(siteModel => !siteModel.IsVisited))
-            // {
-            // }
-
             _gameController.GameModel.CreateNewWalkthroughModel();
             _gameController.OpenMapModule();
         }

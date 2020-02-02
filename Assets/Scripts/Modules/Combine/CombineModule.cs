@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Core;
+using Model;
 using Modules.Common;
 using Params;
 using UnityEngine;
@@ -65,7 +67,15 @@ namespace Modules.Combine
 
         private void OnContinueButtonClick()
         {
-            _gameController.OpenMapModule();
+            if (_gameController.GameModel.WalkthroughModel.Sites.Any(siteModel => !siteModel.IsVisited))
+            {
+                _gameController.OpenMapModule();
+            }
+            else
+            {
+                _gameController.GameModel.CreateNewWalkthroughModel();
+                _gameController.OpenMenuModule();
+            }
         }
 
         public override void Tick(float deltaTime)
