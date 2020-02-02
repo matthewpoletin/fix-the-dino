@@ -17,7 +17,7 @@ namespace Modules.Site
         private Canvas _canvas;
 
         private Timer _timer;
-        private readonly List<BoneSiteView> _createdBones = new List<BoneSiteView>();
+        private readonly List<BoneSiteView> _boneSiteViews = new List<BoneSiteView>();
 
         public override void Activate(GameController gameController, Canvas canvas)
         {
@@ -50,7 +50,7 @@ namespace Modules.Site
             var randomPart = allParts[Random.Range(0, allParts.Count)];
             boneSiteView.Connect(_gameController, _canvas, randomPart, OnPointerEnterBone);
 
-            _createdBones.Add(boneSiteView);
+            _boneSiteViews.Add(boneSiteView);
         }
 
         private void OnTimerElapsed()
@@ -81,6 +81,12 @@ namespace Modules.Site
         public override void Dispose()
         {
             _countdownWidget.Dispose();
+            foreach (var boneSiteView in _boneSiteViews)
+            {
+                boneSiteView.Dispose();
+                GameObject.Destroy(boneSiteView.gameObject);
+            }
+            _boneSiteViews.Clear();
         }
     }
 }

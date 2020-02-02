@@ -1,5 +1,6 @@
 using System;
 using Core;
+using Lifecycle;
 using Params;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -7,7 +8,7 @@ using UnityEngine.UI;
 
 namespace Modules.Site
 {
-    public class BoneSiteView : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler,
+    public class BoneSiteView : BaseView, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler,
         IPointerExitHandler
     {
         [SerializeField] private Image _image = null;

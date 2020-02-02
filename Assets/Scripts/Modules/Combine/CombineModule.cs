@@ -21,6 +21,8 @@ namespace Modules.Combine
 
         private readonly Dictionary<PartType, SlotView> _slotByType = new Dictionary<PartType, SlotView>();
 
+        private readonly List<BoneCombineView> _boneCombineViews = new List<BoneCombineView>();
+
         public override void Activate(GameController gameController, Canvas canvas)
         {
             _gameController = gameController;
@@ -34,6 +36,7 @@ namespace Modules.Combine
                 var boneGameObject = Instantiate(_bonePrefab, _bonesContainer);
                 var boneCombineView = boneGameObject.GetComponent<BoneCombineView>();
                 boneCombineView.Connect(collectedPart, OnCollectedPartClicked);
+                _boneCombineViews.Add(boneCombineView);
             }
         }
 
@@ -93,6 +96,17 @@ namespace Modules.Combine
                 // TODO: Сделать запись в модели о новом виде динозавра
                 _dinoNameListView.AddName($"{headPartParams.Name}{bodyPartParams.Name}{tailPartParams.Name}");
             }
+        }
+
+        public override void Dispose()
+        {
+            _dinoNameListView.Dispose();
+            foreach (var boneCombineView in _boneCombineViews)
+            {
+                boneCombineView.Dispose();
+                GameObject.Destroy(boneCombineView.gameObject);
+            }
+            _boneCombineViews.Clear();
         }
     }
 }

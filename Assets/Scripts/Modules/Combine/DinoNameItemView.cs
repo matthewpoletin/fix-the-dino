@@ -12,5 +12,7 @@ namespace Modules.Combine
         {
             _text.text = dinoName;
         }
+        
+        
     }
 }
