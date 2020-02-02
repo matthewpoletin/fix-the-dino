@@ -45,6 +45,7 @@ namespace Modules.Map
             {
                 _walkthroughModel.CurrentSite = _siteModel;
                 _gameController.OpenSiteModule();
+                _siteModel.IsVisited = true;
             }
         }
     }
