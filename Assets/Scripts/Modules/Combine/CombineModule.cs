@@ -102,15 +102,18 @@ namespace Modules.Combine
                 var tailBoneCombineView = _tailSlotView.transform.GetChild(0).GetComponent<BoneCombineView>();
                 var tailPartParams = tailBoneCombineView.PartParams;
                 tailBoneCombineView.Dispose();
+                _boneCombineViews.Remove(tailBoneCombineView);
                 Destroy(tailBoneCombineView.gameObject);
 
                 var bodyBoneCombineView = _bodySlotView.transform.GetChild(0).GetComponent<BoneCombineView>();
                 var bodyPartParams = bodyBoneCombineView.PartParams;
                 bodyBoneCombineView.Dispose();
+                _boneCombineViews.Remove(bodyBoneCombineView);
                 Destroy(bodyBoneCombineView.gameObject);
 
                 var headBoneCombineView = _headSlotView.transform.GetChild(0).GetComponent<BoneCombineView>();
                 var headPartParams = headBoneCombineView.PartParams;
+                _boneCombineViews.Remove(headBoneCombineView);
                 headBoneCombineView.Dispose();
                 Destroy(headBoneCombineView.gameObject);
 
