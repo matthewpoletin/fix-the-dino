@@ -3,6 +3,7 @@ using Core;
 using Modules.Common;
 using Params;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Modules.Combine
 {
@@ -15,6 +16,7 @@ namespace Modules.Combine
         [SerializeField] private SlotView _tailSlotView = null;
         [SerializeField] private SlotView _bodySlotView = null;
         [SerializeField] private SlotView _headSlotView = null;
+        [SerializeField] private Button _continueButton = null;
 
         private GameController _gameController;
         private Timer _timer;
@@ -23,6 +25,12 @@ namespace Modules.Combine
 
         private readonly List<BoneCombineView> _boneCombineViews = new List<BoneCombineView>();
 
+        private void Awake()
+        {
+            _continueButton.onClick.RemoveAllListeners();
+            _continueButton.onClick.AddListener(OnContinueButtonClick);
+        }
+
         public override void Activate(GameController gameController, Canvas canvas)
         {
             _gameController = gameController;
@@ -30,6 +38,8 @@ namespace Modules.Combine
             _slotByType[_tailSlotView.SlotType] = _tailSlotView;
             _slotByType[_bodySlotView.SlotType] = _bodySlotView;
             _slotByType[_headSlotView.SlotType] = _headSlotView;
+
+            _continueButton.gameObject.SetActive(false);
 
             foreach (var collectedPart in _gameController.GameModel.WalkthroughModel.PartsCollected)
             {
@@ -54,7 +64,12 @@ namespace Modules.Combine
             // sequence.InsertCallback(1f, _gameController.OpenMenuModule);
             // sequence.SetAutoKill(true);
 
-            _gameController.OpenMenuModule();
+            _continueButton.gameObject.SetActive(true);
+        }
+
+        private void OnContinueButtonClick()
+        {
+            _gameController.OpenMapModule();
         }
 
         public override void Tick(float deltaTime)
@@ -104,8 +119,9 @@ namespace Modules.Combine
             foreach (var boneCombineView in _boneCombineViews)
             {
                 boneCombineView.Dispose();
-                GameObject.Destroy(boneCombineView.gameObject);
+                Destroy(boneCombineView.gameObject);
             }
+
             _boneCombineViews.Clear();
         }
     }
