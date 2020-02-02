@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Core;
 using Lifecycle;
 using Params;
 using UnityEngine;
@@ -10,6 +11,8 @@ namespace Modules.Combine
         [SerializeField] private GameObject _dinoNameViewPrefab = null;
         [SerializeField] private DinoCardView _dinoCardView = null;
 
+        private GameController _gameController;
+
         private readonly List<DinoNameListItemView> _allListNameViews = new List<DinoNameListItemView>();
 
         private void Awake()
@@ -17,8 +20,10 @@ namespace Modules.Combine
             _dinoCardView.gameObject.SetActive(false);
         }
 
-        public void Connect(PartParams tailParams, PartParams bodyParams, PartParams headParams)
+        public void Connect(GameController gameController, PartParams tailParams, PartParams bodyParams, PartParams headParams)
         {
+            _gameController = gameController;
+            
             var dinoNameGameObject = Instantiate(_dinoNameViewPrefab, transform);
             var dinoNameView = dinoNameGameObject.GetComponent<DinoNameListItemView>();
             dinoNameView.Connect(tailParams, bodyParams, headParams, OnPointerEnter, OnPointerExit);
@@ -28,7 +33,7 @@ namespace Modules.Combine
         private void OnPointerEnter(PartParams tailParams, PartParams bodyParams, PartParams headParams)
         {
             _dinoCardView.gameObject.SetActive(true);
-            _dinoCardView.SetData(tailParams, bodyParams, headParams);
+            _dinoCardView.SetData(tailParams, bodyParams, headParams, _gameController.GameModel.Params.ReviewParams);
         }
 
         private void OnPointerExit()

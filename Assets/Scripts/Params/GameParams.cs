@@ -12,12 +12,14 @@ namespace Params
 
         [SerializeField] private List<SiteParams> _allSites = null;
         [SerializeField] private List<DinoParams> _allDinos = null;
+        [SerializeField] private ReviewParams _reviewParams = null;
 
         public float SiteDuration => _siteDuration;
         public float CombineDuration => _combineDuration;
 
         public List<SiteParams> AllSites => _allSites;
         public List<DinoParams> AllDinos => _allDinos;
+        public ReviewParams ReviewParams => _reviewParams;
 
         public List<PartParams> GetAllParts()
         {

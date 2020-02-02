@@ -118,7 +118,7 @@ namespace Modules.Combine
                 Destroy(headBoneCombineView.gameObject);
 
                 // TODO: Сделать запись в модели о новом виде динозавра
-                _dinoNameListView.Connect(tailPartParams, bodyPartParams, headPartParams);
+                _dinoNameListView.Connect(_gameController, tailPartParams, bodyPartParams, headPartParams);
             }
         }
 
