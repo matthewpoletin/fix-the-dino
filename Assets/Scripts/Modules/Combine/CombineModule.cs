@@ -25,14 +25,10 @@ namespace Modules.Combine
 
         private readonly List<BoneCombineView> _boneCombineViews = new List<BoneCombineView>();
 
-        private void Awake()
+        public override void Activate(GameController gameController, Canvas canvas)
         {
             _continueButton.onClick.RemoveAllListeners();
             _continueButton.onClick.AddListener(OnContinueButtonClick);
-        }
-
-        public override void Activate(GameController gameController, Canvas canvas)
-        {
             _gameController = gameController;
 
             _slotByType[_tailSlotView.SlotType] = _tailSlotView;
