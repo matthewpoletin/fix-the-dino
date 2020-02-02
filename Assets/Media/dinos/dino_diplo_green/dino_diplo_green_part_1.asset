@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp:Params:PartParams
   _partType: 1
   _name: allo
-  _boneImage: {fileID: -5271895462900466334, guid: aea0da1c3deb54b0abada63df52734f5,
+  _boneImage: {fileID: -6048650704523984561, guid: 4ead3961bb61dec45bc1309690a5a4a5,
     type: 3}
-  _fleshImage: {fileID: -5271895462900466334, guid: aea0da1c3deb54b0abada63df52734f5,
+  _fleshImage: {fileID: 2316110918826939421, guid: 7469c0c54d96deb4c855a26b72d0b092,
     type: 3}

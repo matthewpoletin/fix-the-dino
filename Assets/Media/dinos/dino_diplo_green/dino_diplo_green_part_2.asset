@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp:Params:PartParams
   _partType: 2
   _name: Krypto
-  _boneImage: {fileID: 2961369170257383760, guid: aea0da1c3deb54b0abada63df52734f5,
+  _boneImage: {fileID: -371923677838108018, guid: 4ead3961bb61dec45bc1309690a5a4a5,
     type: 3}
-  _fleshImage: {fileID: 2961369170257383760, guid: aea0da1c3deb54b0abada63df52734f5,
+  _fleshImage: {fileID: -2053225538801923994, guid: 7469c0c54d96deb4c855a26b72d0b092,
     type: 3}

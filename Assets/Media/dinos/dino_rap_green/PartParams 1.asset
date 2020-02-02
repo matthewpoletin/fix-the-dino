@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a811100fd3c4b4d947ae21a5cbda90c, type: 3}
+  m_Name: PartParams 1
+  m_EditorClassIdentifier: 
+  _partType: 0
+  _name: raptor
+  _boneImage: {fileID: 899950432968809406, guid: 278e24c7ef2b3ea448c675dda74ceef1,
+    type: 3}
+  _fleshImage: {fileID: 6210258605785094298, guid: 7a365d23932350a458e9e108e834e411,
+    type: 3}

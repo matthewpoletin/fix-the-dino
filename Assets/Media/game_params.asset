@@ -21,3 +21,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5de50005c03804b678cdd6d9f029eaa1, type: 2}
   _allDinos:
   - {fileID: 11400000, guid: 3ec933062b9954de1aaa94c1e261ada0, type: 2}
+  - {fileID: 11400000, guid: 0588618bcb9a09a43adbff9513a30ffe, type: 2}
+  - {fileID: 11400000, guid: 0be2f9fbd48a2694a8f678927c65b9d9, type: 2}
+  - {fileID: 11400000, guid: 3bbc54b480478e645a0fb38ad5a56dec, type: 2}
