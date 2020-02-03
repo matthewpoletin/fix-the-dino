@@ -11,7 +11,6 @@ namespace Modules.Combine
 {
     public class CombineModule : BaseModule
     {
-        [SerializeField] private CountdownWidget _countdownWidget = null;
         [SerializeField] private Transform _bonesContainer = null;
         [SerializeField] private GameObject _bonePrefab = null;
         [SerializeField] private DinoNameListView _dinoNameListView = null;
@@ -21,7 +20,6 @@ namespace Modules.Combine
         [SerializeField] private Button _continueButton = null;
 
         private GameController _gameController;
-        private Timer _timer;
 
         private readonly Dictionary<PartType, SlotView> _slotByType = new Dictionary<PartType, SlotView>();
 
@@ -37,8 +35,6 @@ namespace Modules.Combine
             _slotByType[_bodySlotView.SlotType] = _bodySlotView;
             _slotByType[_headSlotView.SlotType] = _headSlotView;
 
-            _continueButton.gameObject.SetActive(false);
-
             foreach (var collectedPart in _gameController.GameModel.WalkthroughModel.PartsCollected)
             {
                 var boneGameObject = Instantiate(_bonePrefab, _bonesContainer);
@@ -50,19 +46,6 @@ namespace Modules.Combine
 
         public override void OnModuleLoaded()
         {
-            _timer = new Timer(_gameController.GameModel.Params.CombineDuration);
-            _timer.OnTimerElapsed += OnTimerElapsed;
-            _countdownWidget.SetTimer(_timer);
-        }
-
-        private void OnTimerElapsed()
-        {
-            // TODO: Вернуть позже для добавление задержки к переключению
-            // var sequence = DOTween.Sequence();
-            // sequence.InsertCallback(1f, _gameController.OpenMenuModule);
-            // sequence.SetAutoKill(true);
-
-            _continueButton.gameObject.SetActive(true);
         }
 
         private void OnContinueButtonClick()
@@ -76,13 +59,6 @@ namespace Modules.Combine
                 _gameController.GameModel.CreateNewWalkthroughModel();
                 _gameController.OpenMenuModule();
             }
-        }
-
-        public override void Tick(float deltaTime)
-        {
-            base.Tick(deltaTime);
-
-            _timer?.Tick(deltaTime);
         }
 
         private void OnCollectedPartClicked(BoneCombineView boneCombineView)
