@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Core;
-using Modules.Common;
 using UnityEngine;
+using Utils;
 
 namespace Modules.Site
 {
@@ -84,7 +84,7 @@ namespace Modules.Site
             foreach (var boneSiteView in _boneSiteViews)
             {
                 boneSiteView.Dispose();
-                GameObject.Destroy(boneSiteView.gameObject);
+                Destroy(boneSiteView.gameObject);
             }
             _boneSiteViews.Clear();
         }

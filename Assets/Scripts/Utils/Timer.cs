@@ -1,7 +1,7 @@
 using System;
 using Lifecycle;
 
-namespace Modules.Common
+namespace Utils
 {
     public class Timer : ITick
     {

@@ -1,8 +1,9 @@
 using Lifecycle;
 using TMPro;
 using UnityEngine;
+using Utils;
 
-namespace Modules.Common
+namespace Modules.Site
 {
     public class CountdownWidget : BaseView
     {
