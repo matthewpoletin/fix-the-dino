@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a811100fd3c4b4d947ae21a5cbda90c, type: 3}
-  m_Name: PartParams 2
+  m_Name: tail
   m_EditorClassIdentifier: 
-  _partType: 1
-  _name: ci
-  _boneImage: {fileID: -1842845023077076658, guid: 278e24c7ef2b3ea448c675dda74ceef1,
+  _partType: 0
+  _name: donyx
+  _boneImage: {fileID: 899950432968809406, guid: 278e24c7ef2b3ea448c675dda74ceef1,
     type: 3}
-  _fleshImage: {fileID: -2679813640726812136, guid: 3e9c0d761ada0944abf6ac08c9b3dfe1,
+  _fleshImage: {fileID: 6100891021159440768, guid: 57e37ddbb565f1849874e000553f2c1c,
     type: 3}

@@ -16,5 +16,5 @@ MonoBehaviour:
   _name: urbano
   _boneImage: {fileID: -1842845023077076658, guid: 5973070f3f8b6524e945657953cb2628,
     type: 3}
-  _fleshImage: {fileID: 2790671173032966933, guid: c49faa14e2d4f40be83269ad186bca1d,
+  _fleshImage: {fileID: 3783222878658251622, guid: 0bbb9c80c53ffbb49a8d88d3c3460ea0,
     type: 3}

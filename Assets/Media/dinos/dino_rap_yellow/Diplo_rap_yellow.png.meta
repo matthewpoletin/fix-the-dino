@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 27a9de23f259f41f4a240230a24beade
+guid: 57e37ddbb565f1849874e000553f2c1c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7627576035924068783
-    second: dino_diplo_red_0
+      213: 6100891021159440768
+    second: Diplo_rap_yellow_0
   - first:
-      213: -4276826329134699670
-    second: dino_diplo_red_1
+      213: -6327137093579184255
+    second: Diplo_rap_yellow_1
   - first:
-      213: -5911650052427929415
-    second: dino_diplo_red_2
+      213: -2175699560016776759
+    second: Diplo_rap_yellow_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -92,30 +92,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -131,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dino_diplo_red_0
+      name: Diplo_rap_yellow_0
       rect:
         serializedVersion: 2
         x: 20
@@ -145,14 +121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 156b6790208652690800000000000000
-      internalID: -7627576035924068783
+      spriteID: 08124915f08baa450800000000000000
+      internalID: 6100891021159440768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dino_diplo_red_1
+      name: Diplo_rap_yellow_1
       rect:
         serializedVersion: 2
         x: 839
@@ -166,29 +142,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6b63edfc19a5a4c0800000000000000
-      internalID: -4276826329134699670
+      spriteID: 187e304065e7138a0800000000000000
+      internalID: -6327137093579184255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dino_diplo_red_2
+      name: Diplo_rap_yellow_2
       rect:
         serializedVersion: 2
-        x: 1425
-        y: 269
-        width: 327
-        height: 373
-      alignment: 9
-      pivot: {x: 0.52995163, y: 0.23429763}
+        x: 1438
+        y: 369
+        width: 271
+        height: 203
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b82d9c399995fda0800000000000000
-      internalID: -5911650052427929415
+      spriteID: 9c1f93b07cc5ec1e0800000000000000
+      internalID: -2175699560016776759
       vertices: []
       indices: 
       edges: []

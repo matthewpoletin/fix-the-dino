@@ -111,9 +111,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 20
-        y: 95
+        y: 72
         width: 677
-        height: 566
+        height: 665
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,10 +131,10 @@ TextureImporter:
       name: Right_Diplo_rap_1
       rect:
         serializedVersion: 2
-        x: 694
-        y: 118
-        width: 590
-        height: 559
+        x: 833
+        y: 176
+        width: 461
+        height: 502
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
