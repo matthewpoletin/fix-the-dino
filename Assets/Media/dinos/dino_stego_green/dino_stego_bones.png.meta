@@ -1,16 +1,28 @@
 fileFormatVersion: 2
-guid: 57e37ddbb565f1849874e000553f2c1c
+guid: 3933778e982aae448a5421d960d0af5c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6100891021159440768
-    second: Diplo_rap_yellow_0
+      213: -2468459579244281929
+    second: dino_stego_bones_0
   - first:
-      213: -6327137093579184255
-    second: Diplo_rap_yellow_1
+      213: 6552729485429326303
+    second: dino_stego_bones_1
   - first:
-      213: -2175699560016776759
-    second: Diplo_rap_yellow_2
+      213: 7949208740931373772
+    second: dino_stego_bones_2
+  - first:
+      213: 8133328963401708992
+    second: dino_stego_bones_3
+  - first:
+      213: 5540892446230015626
+    second: dino_stego_bones_4
+  - first:
+      213: 5234473207689727778
+    second: dino_stego_bones_5
+  - first:
+      213: 4070524691683189573
+    second: dino_stego_bones_6
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -107,64 +119,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Diplo_rap_yellow_0
+      name: dino_stego_bones_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 72
-        width: 677
-        height: 665
+        x: 19
+        y: 244
+        width: 697
+        height: 510
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08124915f08baa450800000000000000
-      internalID: 6100891021159440768
+      spriteID: 7bffbb457154ebdd0800000000000000
+      internalID: -2468459579244281929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Diplo_rap_yellow_1
+      name: dino_stego_bones_1
       rect:
         serializedVersion: 2
-        x: 839
-        y: 214
-        width: 434
-        height: 502
+        x: 837
+        y: 623
+        width: 12
+        height: 12
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 187e304065e7138a0800000000000000
-      internalID: -6327137093579184255
+      spriteID: fd14e38cfb8ffea50800000000000000
+      internalID: 6552729485429326303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Diplo_rap_yellow_2
+      name: dino_stego_bones_2
       rect:
         serializedVersion: 2
-        x: 1420
-        y: 341
-        width: 283
-        height: 254
+        x: 838
+        y: 285
+        width: 496
+        height: 525
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c1f93b07cc5ec1e0800000000000000
-      internalID: -2175699560016776759
+      spriteID: cca05a0bb33415e60800000000000000
+      internalID: 7949208740931373772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_stego_bones_3
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 618
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c574f899936fd070800000000000000
+      internalID: 8133328963401708992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_stego_bones_4
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 579
+        width: 4
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e6f2ca25435ec40800000000000000
+      internalID: 5540892446230015626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_stego_bones_5
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 436
+        width: 198
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f45a226a594a840800000000000000
+      internalID: 5234473207689727778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dino_stego_bones_6
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 262
+        width: 14
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543ab39f3a86d7830800000000000000
+      internalID: 4070524691683189573
       vertices: []
       indices: 
       edges: []

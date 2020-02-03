@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a811100fd3c4b4d947ae21a5cbda90c, type: 3}
+  m_Name: Body
+  m_EditorClassIdentifier: 
+  _partType: 1
+  _name: au
+  _boneImage: {fileID: 7949208740931373772, guid: 3933778e982aae448a5421d960d0af5c,
+    type: 3}
+  _fleshImage: {fileID: 4697144605478012736, guid: 6fe8419143a7ade49bdd28dc241069c0,
+    type: 3}

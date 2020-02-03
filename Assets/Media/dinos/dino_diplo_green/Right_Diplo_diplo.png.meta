@@ -132,7 +132,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 839
-        y: 214
+        y: 215
         width: 434
         height: 502
       alignment: 0
@@ -152,8 +152,8 @@ TextureImporter:
       name: Right_Diplo_diplo_2
       rect:
         serializedVersion: 2
-        x: 1422
-        y: 257
+        x: 1425
+        y: 226
         width: 327
         height: 415
       alignment: 0

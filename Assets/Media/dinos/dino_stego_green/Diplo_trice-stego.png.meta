@@ -1,7 +1,19 @@
 fileFormatVersion: 2
-guid: 3933778e982aae448a5421d960d0af5c
+guid: 6fe8419143a7ade49bdd28dc241069c0
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 826622417407223740
+    second: Diplo_trice-stego_0
+  - first:
+      213: 4697144605478012736
+    second: Diplo_trice-stego_1
+  - first:
+      213: 6955523479770462939
+    second: Diplo_trice-stego_2
+  - first:
+      213: -9186535630087985621
+    second: Diplo_trice-stego_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -96,7 +108,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Diplo_trice-stego_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 72
+        width: 667
+        height: 665
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7aee085b0c87b00800000000000000
+      internalID: 826622417407223740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diplo_trice-stego_1
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 167
+        width: 446
+        height: 612
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047c824d12c9f2140800000000000000
+      internalID: 4697144605478012736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diplo_trice-stego_2
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 297
+        width: 271
+        height: 276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda7b9eb0cbf68060800000000000000
+      internalID: 6955523479770462939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diplo_trice-stego_3
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 360
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26e22c448ed28080800000000000000
+      internalID: -9186535630087985621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

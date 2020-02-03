@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba375ab4d847428cb9017e0ecb8cd8b2, type: 3}
   m_Name: game_params
   m_EditorClassIdentifier: 
-  _siteDuration: 10
-  _combineDuration: 10
+  _siteDuration: 15
+  _combineDuration: 15
   _allSites:
   - {fileID: 11400000, guid: fd03bd5ebaac74fdcade3b0ae2702375, type: 2}
   - {fileID: 11400000, guid: aa58076ae10b14633b9322df9310f1d5, type: 2}
@@ -26,4 +26,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0be2f9fbd48a2694a8f678927c65b9d9, type: 2}
   - {fileID: 11400000, guid: 3ec933062b9954de1aaa94c1e261ada0, type: 2}
   - {fileID: 11400000, guid: d169f1f9164f62d489d8559f6c38d92b, type: 2}
+  - {fileID: 11400000, guid: 14807347fdd23c14a80dee636b84ec31, type: 2}
   _reviewParams: {fileID: 11400000, guid: f6fb07bc87ad246ba9be053b5a65d3bf, type: 2}
