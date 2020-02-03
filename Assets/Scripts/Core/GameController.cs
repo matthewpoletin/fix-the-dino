@@ -5,6 +5,7 @@ using Modules.Map;
 using Modules.Menu;
 using Modules.Site;
 using Modules.TitleModule;
+using Modules.Tutorial;
 using UnityEngine;
 
 namespace Core
@@ -24,6 +25,11 @@ namespace Core
         public void OpenTitleModule()
         {
             _moduleManager.OpenModule<TitleModule>();
+        }
+
+        public void OpenTutorialModule()
+        {
+            _moduleManager.OpenModule<TutorialModule>();
         }
 
         public void OpenMenuModule()

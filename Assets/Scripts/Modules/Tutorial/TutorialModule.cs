@@ -2,12 +2,12 @@ using Core;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Modules.TitleModule
+namespace Modules.Tutorial
 {
-    public class TitleModule : BaseModule, IPointerDownHandler
+    public class TutorialModule : BaseModule, IPointerDownHandler
     {
         private GameController _gameController;
-
+        
         public override void Activate(GameController gameController, Canvas canvas)
         {
             _gameController = gameController;
@@ -19,7 +19,7 @@ namespace Modules.TitleModule
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            _gameController.OpenTutorialModule();
+            _gameController.OpenMenuModule();
         }
     }
 }
