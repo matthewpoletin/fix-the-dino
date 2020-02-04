@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a811100fd3c4b4d947ae21a5cbda90c, type: 3}
-  m_Name: dino_diplo_green_part_1
+  m_Name: PartParams 1
   m_EditorClassIdentifier: 
-  _partType: 0
-  _name: spinax
-  _boneImage: {fileID: -7910085522700426234, guid: 7674ba1f59e59a04cb8aae4adf547a44,
+  _partType: 2
+  _name: Kosmo
+  _boneImage: {fileID: -371923677838108018, guid: 4ead3961bb61dec45bc1309690a5a4a5,
     type: 3}
-  _fleshImage: {fileID: -7627576035924068783, guid: 27a9de23f259f41f4a240230a24beade,
+  _fleshImage: {fileID: 7774431646247232532, guid: bf47d5acb08422d409f57ad1d56bd327,
     type: 3}
